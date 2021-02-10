@@ -7,8 +7,8 @@ export type PullRequest = {
   title: string;
   user: {
     login: string;
-  };
-  body: string;
+  } | null;
+  body: string | null;
   labels: {
     name: string;
   }[];
